@@ -132,7 +132,7 @@ async def start(bot, message):
         text="**வணக்கம் {}!**\n".format(message.chat.first_name)+C.START,
         reply_markup=InlineKeyboardMarkup([
             [ InlineKeyboardButton(text="💠 Movies 💠", url=f"https://t.me/Tamil_Kingdom")],
-            [ InlineKeyboardButton(text="📮 Old Series 📮", url=f"https://t.me/TamilShowss")]
+            [ InlineKeyboardButton(text="📮 Old Series 📮", url=f"https://t.me/Tamil_Showss")]
         ])
     )
 
@@ -160,7 +160,7 @@ async def help(bot, message):
         text=C.HELP,
         reply_markup=InlineKeyboardMarkup([
             [ InlineKeyboardButton(text="💠 Movies 💠", url=f"https://t.me/Tamil_Kingdom")],
-            [ InlineKeyboardButton(text="💠 Old Series 💠", url=f"https://t.me/Tamilshowss")]
+            [ InlineKeyboardButton(text="💠 Old Series 💠", url=f"https://t.me/Tamil_showss")]
         ])
     )
 
@@ -187,10 +187,9 @@ async def help(bot, message):
     await message.reply_text(
         text=C.BRO,
         reply_markup=InlineKeyboardMarkup([
-            [ InlineKeyboardButton(text="🤖 UTube Anna 🤖", url=f"https://t.me/Tamil_Kingdom")],
-            [ InlineKeyboardButton(text="🤖 Insta Akka 🤖", url=f"https://t.me/Tamil_Kingdom")],
-            [ InlineKeyboardButton(text="🤖 Font Thambi 🤖", url=f"https://t.me/Tamil_Kingdom")],
-            [ InlineKeyboardButton(text="🤖 Baby Paiyan 🤖", url=f"https://t.me/Tamilshowss")]
+            [ InlineKeyboardButton(text="🤖 Youtube Downloader 🤖", url=f"https://t.me/TKYoutubeDl_Bot")],
+            [ InlineKeyboardButton(text="🤖 File Store Bot 🤖", url=f"https://t.me/FileBankTK_Bot")],
+            [ InlineKeyboardButton(text="🤖 Stylish Font Generator 🤖", url=f"https://t.me/StylishFontGen_bot")]
         ])
     )
 
