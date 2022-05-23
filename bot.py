@@ -129,7 +129,7 @@ async def start(bot, message):
         parse_mode="html"
     )
     await message.reply_text(
-        text="**Vanakkam {}!**\n".format(message.chat.first_name)+C.START,
+        text="**வணக்கம் {}!**\n".format(message.chat.first_name)+C.START,
         reply_markup=InlineKeyboardMarkup([
             [ InlineKeyboardButton(text="💠 Movies 💠", url=f"https://t.me/Tamil_Kingdom")],
             [ InlineKeyboardButton(text="📮 Old Series 📮", url=f"https://t.me/TamilShowss")]
@@ -195,7 +195,7 @@ async def help(bot, message):
     )
 
 
-@bot.on_message(filters.command('donate') & (filters.group | filters.private))
+@bot.on_message(filters.command('donate5191') & (filters.group | filters.private))
 async def donate(bot, message):
     chat_id = message.from_user.id
     # Adding to DB
@@ -225,7 +225,7 @@ async def donate(bot, message):
 
 
 
-@bot.on_message(filters.command("settings") & filters.private)
+@bot.on_message(filters.command("settings5191") & filters.private)
 async def opensettings(bot, cmd):
     user_id = cmd.from_user.id
     # Adding to DB
