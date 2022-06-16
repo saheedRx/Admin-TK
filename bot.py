@@ -132,7 +132,8 @@ async def start(bot, message):
         text="**வணக்கம் {}!**\n".format(message.chat.first_name)+C.START,
         reply_markup=InlineKeyboardMarkup([
             [ InlineKeyboardButton(text="💠 Movies 💠", url=f"https://t.me/Tamil_Kingdom")],
-            [ InlineKeyboardButton(text="📮 Old Series 📮", url=f"https://t.me/Tamil_Showss")]
+            [ InlineKeyboardButton(text="📮 Old Series 📮", url=f"https://t.me/Tamil_Showss")],
+            [ InlineKeyboardButton(text = 'Search Here', switch_inline_query_current_chat = '')]
         ])
     )
 
